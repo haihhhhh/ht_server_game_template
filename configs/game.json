@@ -1,0 +1,13 @@
+{
+  "id_node": 2,
+  "nats": "nats://127.0.0.1:14222",
+  "etcd": "http://127.0.0.1:12379",
+  "prefix": "ht_game_dev",
+  "private_network": false,
+  "tables": "tables/exported",
+  "roles_per_zone": 1,
+  "max_players": 128,
+  "player_queue": 64,
+  "tick_ms": 1000,
+  "save_seconds": 10
+}

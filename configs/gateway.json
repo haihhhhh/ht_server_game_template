@@ -1,0 +1,9 @@
+{
+  "address": "127.0.0.1:3250",
+  "nats": "nats://127.0.0.1:14222",
+  "etcd": "http://127.0.0.1:12379",
+  "prefix": "ht_game_dev",
+  "private_network": false,
+  "tables": "tables/exported",
+  "max_sessions": 128
+}

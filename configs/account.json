@@ -1,0 +1,12 @@
+{
+  "id_node": 1,
+  "nats": "nats://127.0.0.1:14222",
+  "etcd": "http://127.0.0.1:12379",
+  "prefix": "ht_game_dev",
+  "private_network": false,
+  "db_queues": 4,
+  "max_accounts": 128,
+  "account_queue": 64,
+  "save_seconds": 10,
+  "zones": [{"id": "default", "name": "默认区", "open": true}]
+}

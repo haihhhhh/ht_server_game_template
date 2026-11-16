@@ -1,0 +1,10 @@
+{
+  "nats": "nats://127.0.0.1:14222",
+  "etcd": "http://127.0.0.1:12379",
+  "prefix": "ht_game_dev",
+  "private_network": false,
+  "tables": "tables/exported",
+  "max_scopes": 128,
+  "queue_capacity": 64,
+  "save_seconds": 10
+}

@@ -1,0 +1,18 @@
+groups:
+  - name: ht-game
+    rules:
+      - alert: GameMetricsUnavailable
+        expr: up{job="ht-game"} == 0
+        for: 1m
+        annotations:
+          summary: "游戏进程指标不可达，先检查进程和采集凭据"
+      - alert: GameSaveQueueHigh
+        expr: ht_save_pending > 200
+        for: 1m
+        annotations:
+          summary: "数据库任务积压，检查数据库可用性和写入耗时"
+      - alert: GameOperationsFailing
+        expr: rate(ht_operations_total{result="error"}[5m]) > 1
+        for: 2m
+        annotations:
+          summary: "框架操作持续失败，通过 request_id 查日志"

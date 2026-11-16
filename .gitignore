@@ -1,0 +1,12 @@
+/bin/
+/.tools/
+/common/protocol/generated/
+/common/gamedata/generated/
+/tables/exported/
+/configs/*.local.json
+*.log
+*.log.*
+/logs/
+.env
+*.local
+/servers/game/internal/player/modules/generated/
