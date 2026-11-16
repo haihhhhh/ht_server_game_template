@@ -20,3 +20,5 @@ Go 游戏服务端项目模板。连接由 `gateway` 管理，`account` 验证�
 | 配置、查看日志和维护服务 | [服务配置](docs/service-config.md) · [日志与诊断](docs/observability.md) · [运行手册](docs/operations.md) |
 
 账号和角色创建完成后才返回成功。玩家在线修改先作用于内存，定期按变化提交保存。节点故障时，最近的修改可能丢失；恢复有归属的数据前先确认旧节点已停止写入。
+
+本项目采用 [MIT 许可证](LICENSE)。
